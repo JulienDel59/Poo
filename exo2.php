@@ -16,7 +16,7 @@
     }
 
     class Homme extends Humain {
-        public function __construct($nom, $age) {
+        public function __construct() {
             $this->nom = "Jean";
             $this->age = "20";
 

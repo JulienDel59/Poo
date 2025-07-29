@@ -1,4 +1,4 @@
-<?php
+ <?php
 
     class Personnage {
         public $nom;
@@ -10,6 +10,7 @@
             $this->vie= $vie;
             $this->force =$force;
         }
+
     }
 
       class Guerrier extends Personnage {
@@ -17,9 +18,6 @@
             $this->nom = "Guerrier";
             $this->vie= 120;
             $this->force = 15;
-        }
-         public function PresentatotionPerso() {
-        echo "je suis " . $this->nom . ", j'ai " . $this->vie . " points de vie et ma force est de " . $this->force . ".<br>";
         }
       }
 
@@ -29,9 +27,6 @@
             $this->vie= 100;
             $this->force = 12;
         }
-         public function PresentatotionPerso() {
-        echo "je suis " . $this->nom . ", j'ai " . $this->vie . " points de vie et ma force est de " . $this->force . ".<br>";
-        }
     }
 
     class Magicien extends Personnage {
@@ -40,23 +35,10 @@
             $this->vie= 90;
             $this->force = 8;
         }
-         public function PresentatotionPerso() {
-        echo "je suis " . $this->nom . ", j'ai " . $this->vie . " points de vie et ma force est de " . $this->force . ".<br>";
-        }
     }
 
 
-
-    $guerrier = new Guerrier();
-    $voleur = new Voleur();
-    $magicien = new Magicien();
-
-    $guerrier->PresentatotionPerso();
-    $voleur->PresentatotionPerso(); 
-    $magicien->PresentatotionPerso();  
-
-    echo "<br>";
-    echo "<from>
+    echo "<form method='get'>
             <label> Choisisser votre personnage :</label>
             <select name='choixPerso'>
              <option value='guerrier'>Guerrier</option>
@@ -66,5 +48,5 @@
             <input type='submit' value='Valider'>
          </form>";
 
-    
-?>
+
+?> 
