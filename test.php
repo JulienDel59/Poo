@@ -131,6 +131,7 @@ if (isset($_GET['choixPerso'])) {
         $joueur1->attaquer($joueur2);
         $joueur2->afficherEtat();
         if ($joueur2->vie <= 0) {
+            echo "<br>";
             echo "<strong>{$joueur1->nom} gagne !</strong><br>";
             break;
         }
@@ -138,6 +139,7 @@ if (isset($_GET['choixPerso'])) {
         $joueur2->attaquer($joueur1);
         $joueur1->afficherEtat();
         if ($joueur1->vie <= 0) {
+            echo "<br>";
             echo "<strong>{$joueur2->nom} gagne !</strong><br>";
             break;
         }
