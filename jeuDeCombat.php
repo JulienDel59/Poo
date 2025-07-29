@@ -55,9 +55,16 @@
     $voleur->PresentatotionPerso(); 
     $magicien->PresentatotionPerso();  
 
-    
+    echo "<br>";
+    echo "<from>
+            <label> Choisisser votre personnage :</label>
+            <select name='choixPerso'>
+             <option value='guerrier'>Guerrier</option>
+             <option value='voleur'>Voleur</option>
+             <option value='magicien'>Magicien</option>
+            </select>
+            <input type='submit' value='Valider'>
+         </form>";
 
     
-   
-
 ?>
