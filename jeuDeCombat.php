@@ -18,13 +18,19 @@
             $this->vie= 120;
             $this->force = 15;
         }
-    }
+         public function PresentatotionPerso() {
+        echo "je suis " . $this->nom . ", j'ai " . $this->vie . " points de vie et ma force est de " . $this->force . ".<br>";
+        }
+      }
 
      class Voleur extends Personnage {
         public function __construct() {
             $this->nom = "Voleur";
             $this->vie= 100;
             $this->force = 12;
+        }
+         public function PresentatotionPerso() {
+        echo "je suis " . $this->nom . ", j'ai " . $this->vie . " points de vie et ma force est de " . $this->force . ".<br>";
         }
     }
 
@@ -34,7 +40,24 @@
             $this->vie= 90;
             $this->force = 8;
         }
+         public function PresentatotionPerso() {
+        echo "je suis " . $this->nom . ", j'ai " . $this->vie . " points de vie et ma force est de " . $this->force . ".<br>";
+        }
     }
 
+
+
+    $guerrier = new Guerrier();
+    $voleur = new Voleur();
+    $magicien = new Magicien();
+
+    $guerrier->PresentatotionPerso();
+    $voleur->PresentatotionPerso(); 
+    $magicien->PresentatotionPerso();  
+
+    
+
+    
+   
 
 ?>
