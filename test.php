@@ -72,7 +72,7 @@ class Magicien extends Personnage {
 }
 
 // === le reste du code (formulaire, sélection, combat) ===
-// Identique au code précédent avec la boucle de combat
+
 
 // --- Affichage formulaire et combat ---
 
