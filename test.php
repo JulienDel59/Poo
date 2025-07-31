@@ -1,3 +1,6 @@
+<style>
+
+</style>
 <?php
 
 class Personnage {
@@ -32,7 +35,7 @@ class Guerrier extends Personnage {
     public function __construct() {
         parent::__construct("Guerrier", 120, 15);
     }
-    // Pas besoin de modifier attaquer, dégâts constants
+    
 }
 
 class Voleur extends Personnage {

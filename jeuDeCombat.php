@@ -48,5 +48,9 @@
             <input type='submit' value='Valider'>
          </form>";
 
+    if (isset($_GET['choixPerso'])) {
+        $choixPerso = $_GET['choixPerso'];
+        echo "Vous avez choisi : $choixPerso<br>";
 
+    }
 ?> 
