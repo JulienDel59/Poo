@@ -53,4 +53,4 @@
         echo "Vous avez choisi : $choixPerso<br>";
 
     }
-?> 
+?> fr
